@@ -10,7 +10,7 @@
    1. Discuss wrong result
 3. Set breakpoint in line 14
 4. Debug program
-   1. Step over line 14 thrugh 17
+   1. Step over line 14 through 17
    2. Discuss problem here with "Step Over"
    3. Step Into line 18
    4. Discuss what happened

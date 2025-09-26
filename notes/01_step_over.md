@@ -9,9 +9,10 @@
 5. Show the two ways to start debugging
 6. Debug program and explain debugger invocation in the terminal
 7. Explain debug controls panel
+   1. Mention all buttons!
 8. Explain Variables section
    1. Why is `count` not listed?
-9. Step over count and discuss result
+9.  Step over count and discuss result
 10. Step through first two iterations of for loop
 11. Set breakpoint on line 23
 12. Explain Continue (F5)

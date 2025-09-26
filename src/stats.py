@@ -1,7 +1,7 @@
 """A module with functions calculating various stats"""
 
 
-def count(nums):
+def number_of_elements(nums):
     """Returns the number of elements in an iterable"""
     return len(nums)
 
@@ -13,9 +13,7 @@ def total(nums):
 
 def mean(nums):
     """Returns the mean, or average, of an iterable of numbers"""
-    mean = total(nums) / count(nums)
-
-    return mean
+    return total(nums) / number_of_elements(nums)
 
 
 def variance(nums):
@@ -23,7 +21,7 @@ def variance(nums):
     squared_difference = []
     for x in nums:
         squared_difference.append((x - mean(nums)) ** 2)
-    variance = sum(squared_difference) / (count(nums) - 1)
+    variance = sum(squared_difference) / (number_of_elements(nums) - 1)
 
     return variance
 
@@ -31,4 +29,4 @@ def variance(nums):
 def median(nums):
     """Return the median of an iterable of numbers"""
     sorted_nums = sorted(nums)
-    return sorted_nums[count(nums) // 2]
+    return sorted_nums[number_of_elements(nums) // 2]

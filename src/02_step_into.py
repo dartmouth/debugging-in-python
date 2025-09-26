@@ -12,7 +12,7 @@ def compute_stats(nums):
     """Calculate some basic statistics"""
 
     total = stats.total(nums)
-    count = stats.count(nums)
+    count = stats.number_of_elements(nums)
     mean = stats.mean(nums)
     variance = stats.variance(nums)
     median = stats.median(nums)

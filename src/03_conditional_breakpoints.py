@@ -14,7 +14,7 @@ transactions = [
 ]
 
 
-def process(transactions, starting_balance=100):
+def process(transactions, starting_balance=0):
     balance = starting_balance
 
     for t in transactions:
@@ -22,7 +22,7 @@ def process(transactions, starting_balance=100):
 
         balance += amount
 
-        flag = "OVERDRAWN" if balance < 0 else "OK"
+        flag = "OVERDRAWN - PAY PENALTY!!!" if balance < 0 else "OK"
 
     return balance, flag
 
